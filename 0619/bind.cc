@@ -14,30 +14,23 @@ struct Example{
 		return x+y;
 	}	
 };
-
 int add(int x,int y) {
 	cout << "x=" << x  << " "  << "y="	 << y << " " << endl;
 	return x+y;
 } 
-
 void print(int x, const int & y) {
 	cout << "x=" << x << " "  << "y=" << y << " "	 << endl;
 }
-
 void test1() {
 	auto f1 = std::bind(add,10,20);
 	f1();
 	// cout << f1() << endl;
 	cout << "f1()" << endl;
-
 	auto f2 = std::bind(add,10,std::placeholders::_2); // 函数f2 绑定add函数，参数1固定为10， 参数2保持与f2中的第2个参数一致.
-
 	cout << f2(30,40) << endl;
-
 	Example e;
 	auto f3 = std::bind(&Example::add, &e, 8123,20); // 绑定Example结构体的成员函数add，因为add在结构体中，所以add函数的第一个参数是this，用&e传入this指针
 	cout << f3() << endl;
-
 	auto f4 = std::bind(&Example::add,std::placeholders::_1, 333, std::placeholders::_4);// 函数f4 绑定Example结构体中的add成员函数，参数1由f4()的第1参数&e传入，
 																						 // 参数2固定333，参数3由f4()的第4参数传入，.
 	cout << f4(&e,2,3,4) << endl;  // 输出：337
