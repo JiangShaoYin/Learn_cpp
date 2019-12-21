@@ -20,10 +20,8 @@ class Point{
 			x=ix;
 			y=iy;
 		}
-	void	print(){
-			cout << x
-			     << ","
-				 << y << endl;
+	void print(){
+			cout << x  << "," << y << endl;
 		}
 	private:
 		int x;
