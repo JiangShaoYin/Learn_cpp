@@ -8,12 +8,15 @@
 #ifdef __cplusplus
 extern "C"{
 #endif
+
 int add(int x,int y){
 		return x+y;
 	}
+
 #ifdef __cplusplus
 }
 #endif
+
 int add(int x,int y,int z){
 	return x+y+z;
 }

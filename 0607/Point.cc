@@ -10,9 +10,9 @@ using std::endl;
 class Point{
 	public:
 		Point & operator = (const Point & rhs){
-			_ix=rhs._ix;
-			_iy=rhs._iy;
-			cout<<"Point & operator=(const Point & rhs)"<<endl;
+			_ix = rhs._ix;
+			_iy = rhs._iy;
+			cout<< "Point & operator=(const Point & rhs)" << endl;
 			return *this;
 		}
 		Point()

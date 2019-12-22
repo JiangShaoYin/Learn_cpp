@@ -9,12 +9,12 @@ using std::cout;
 using std::endl;
 
 void test(){
-	int a=10;
-	float b=static_cast <float> (a);
-	cout<<""<<b<<endl;
-	int *p=static_cast<int *> (malloc(sizeof(int)));
-	*p=20;
-	cout<<""<<*p<<endl;
+	int a = 10;
+	float b = static_cast<float> (a); // 静态转换”的意思，也就是在编译期间转换，转换失败的话会抛出一个编译错误
+	cout << "" << b << endl;
+	int *p = static_cast<int *> (malloc(sizeof(int)));
+	*p = 20;
+	cout<< ""<< *p << endl;
 	free(p);	
 }
 int main(){

@@ -8,19 +8,18 @@ using namespace std;
 
 class  computer{
 	public:
-		computer(const char*brand,float price)
-			:_brand(new char[strlen(brand)+1])
+		computer(const char* brand, float price)
+			:_brand(new char[strlen(brand) + 1])
 			,_price(price)
 			{
-				strcpy(_brand,brand);
+				strcpy(_brand, brand);
 				cout<<"constructed function"<<endl;
 			}
 		computer(const computer & rhs)
-			:_brand(new char[strlen(rhs._brand)+1]())
-			,_price(rhs._price)
-		{
-			strcpy(_brand,rhs._brand);
-			cout<<"computer(const computer & rhs)"<<endl;
+			:_brand(new char[strlen(rhs._brand) + 1]())
+			,_price(rhs._price) {
+			strcpy(_brand, rhs._brand);
+			cout<< "computer(const computer & rhs)" << endl;
 		}
 		
 		void print(){
@@ -40,7 +39,7 @@ class  computer{
 computer  func(){
 	computer A("ACER",3999);
 	A.print();
-//	return A;
+	return A;
 }
 
 

@@ -9,10 +9,10 @@ using std::cout;
 using std::endl;
 
 void func(){
-	int *a=new int(10);
-	int *b=new int [10]();
-	cout<<""<<*a<<endl;
-	cout<<""<<*b<<endl;
+	int *a = new int(10);
+	int *b = new int [10]();
+	cout << "" << *a << endl;
+	cout << "" << *b << endl;
 }
 int  main(){
 	func();

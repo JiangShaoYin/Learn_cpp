@@ -12,9 +12,9 @@ int main(){
 	bool a=101;
 	bool b=0;
 	bool c=-1;
-	cout<<"a="<<a<<endl
-		<<"b="<<b<<endl
-		<<"c="<<c<<endl;
+	cout<< "a=" << a << endl
+		<< "b=" << b << endl
+		<< "c=" << c << endl;
 	return 0;
 
 }
