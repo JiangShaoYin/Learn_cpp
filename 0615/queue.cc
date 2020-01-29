@@ -45,13 +45,13 @@ bool Queue<T,size>::empty(){
 }
 
 template <class T,int size>
-bool Queue<T,size>::full(){
-	return (_rear-_front+size)%size==(size-1);
+bool Queue<T, size>::full(){
+	return (_rear - _front + size) % size == (size - 1);
 }
  
 template <class T,int size>
 void Queue<T,size>::push(const T & t){
-	if(!full()){
+	if (!full()) {
 		_base[_rear]=t;
 		++_rear%=size;
 	}
