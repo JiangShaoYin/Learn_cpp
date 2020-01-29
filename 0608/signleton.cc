@@ -9,6 +9,8 @@ using std::cout;
 using std::endl;
 
 
+
+
 class Singleton{
 	public:
 		static Singleton * Getp() {
