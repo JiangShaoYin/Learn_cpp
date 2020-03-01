@@ -18,9 +18,7 @@ class Base {
 		int _ib;
 }; //end of Base
 
-class Derived
-:public Base
-{
+class Derived : public Base {
 	public:
 	Derived(int x, int y)
 		:Base(x)

@@ -20,16 +20,13 @@ class B {
 		~B(){cout << "~B()" <<endl;}
 };
 
-class C
-:public B
-,public A
-{
+class C : public B, public A {
 	public:
 		C()
 		:A()
-		,B() {
+		,B() { 
 			cout << "C()" << endl;
-		}
+			}
 	~C() { cout << "~C()" << endl;}
 };
 

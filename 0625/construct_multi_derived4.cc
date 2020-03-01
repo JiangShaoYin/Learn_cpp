@@ -20,8 +20,7 @@ class B {
 		~B(){cout << "~B()" <<endl;}
 };
 
-class C
-{
+class C {
 	public:
 		C()	{cout << "C()" << endl;	}
 		~C() { cout << "~C()" << endl;}
@@ -30,8 +29,7 @@ class C
 		int _ic;	
 };
 
-class Derived 
-:public Base {
+class Derived : public Base {
 	public:
 		Derived()
 		:Base()

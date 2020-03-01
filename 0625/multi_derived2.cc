@@ -16,27 +16,18 @@ class A{
 		int _ia;
 };
  
-class B
-:public A
-//:virtual public A
-{
+class B : public A { //:virtual public A
 	private:
 		int _ib;
 };
  
 
-class C 
-//:virtual public A
-: public A
-{
+class C : public A { //:virtual public A
 	private:
 		int _ic;
 };
 
-class D 
-:public B
-,public C
-{
+class D : public B, public C {
 	private:
 		int _id;
 };

@@ -9,15 +9,15 @@
   using std::cin;	   
   using std::endl;
 	using std::cout;
-     class Base {
+class Base {
 public:
-      Base(){}
-	 Base(const char *ptr)
+    Base(){}
+	Base(const char *ptr)
 	     :_ptr(new char[strlen(ptr) + 1]) {
 	          cout << "Base(const char * ptr)" << endl;
 	          strcpy(_ptr, ptr);
 	         }
- Base(const Base & rhs)
+ 	Base(const Base & rhs)
 	     :_ptr(new char[strlen(rhs._ptr) + 1]) {
 	          cout << "Base(const Base & rhs)" << endl;
 	          strcpy(_ptr, rhs._ptr);
@@ -32,7 +32,7 @@ public:
 			            char * _ptr;
 		 };//end of Base
 
-       class Derived
+class Derived
 	   :public{
 			        public:
 					       private:

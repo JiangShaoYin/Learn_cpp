@@ -19,9 +19,7 @@ class B{
 		void display() {	cout << "b" << endl;}
 };
  
-class C
-:public A
-,public B
+class C : public A, public B
 {
 };
 
